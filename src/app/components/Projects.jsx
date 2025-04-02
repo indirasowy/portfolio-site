@@ -7,7 +7,7 @@ import { projects, designProjects, otherDesigns } from '../consts'
 function ProjectCard({ project, isInternal = false }) {
     const Wrapper = isInternal ? Link : "a";
     const wrapperProps = isInternal
-      ? { href: `/design/${project.slug}` }
+      ? { href: `/${project.slug}` }
       : {
           href: project.link,
           target: "_blank",

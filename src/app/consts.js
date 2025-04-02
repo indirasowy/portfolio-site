@@ -174,13 +174,13 @@ export const projects = [
       image: "/projects/entreprenher.png",
       tech: ["UI Design", "HTML", "CSS"],
       description: "A web application to find and support local female-owned businesses in your area, done for a hackathon, done for cmd-f.",
-      slug: "entreprenHER",
+      slug: "entreprenher",
     },
     {
         title: "onlyProfs",
         time: "January 2023",
         image: "/projects/onlyprofs.png",
-        tech: ["UI Design", "HTML", "CSS"],
+        tech: ["UI Design", "React"],
         description: "A platform for professors to earn passive income by uploading lecture materials and resources for students, done for nwHacks.",
         slug: "onlyprofs",
     },
@@ -193,6 +193,115 @@ export const projects = [
         slug: "react-lab",
     },
   ];  
+
+
+export const projectPages = {
+    "alliance": {
+      title: "Alliance",
+      role: "UX Researcher and Designer",
+      heroImage: "/projects/alliance/alliance-comp.png",
+      description: `A website to connect creative independents together to work on projects and grow their portfolios, done for a team hackathon.`,
+      problem: `For this hackathon, our team wanted to address a problem we noticed in the creative and tech industry. The tech industry is a growing community consisting of students, freelancers, and employees taking on different fields. A certain branch of the tech industry that exercises “creative independence” are those in Design, Engineering, and Product. In this branch, projects play a significant role in upping one’s portfolio. However, when projects require collaborative work, tech aspirants, especially those who are new to the industry or field, may not know who to reach out to. This is because they have limited resources, knowledge, and no community to reach out to.`,
+      process: `For research, I crafted had an initial survey of individuals in the industries of design, engineering, and product who were interested in working on projects. Participants were chosen were invited to an hour interview in an attempt to understand how collaboration is scouted by tech aspirants and the challenges they face. The research found that individuals struggled to get experience working on collaborative projects without having to apply for actual jobs. Moreover, they faced challenges looking for collaborators who were willing to work with them without some sort of compensation. Our team concluded that there are many individuals who want to collaborate, but don't know where to find like-minded people.`,
+      solution: `Our team created a website that connects tech aspirants who exercise “creative independence” to one another for collaborative work on projects they can add to their experiences and portfolios. This website also aims to build a peer-to-peer network or a “creative independent” community that fosters creativity and innovation by allowing them to brainstorm various projects to work on together. Its main goal is to be the gateway for their career through upskilling and collaboration.`,
+      features: [
+          "Personalized Onboarding: Users answer questions about their field, interests, experience, and skills to build their profile.",
+          "Discovery Feed: Explore user-submitted projects with detailed goals, collaboration needs, and creative inspirations.",
+          "Collaboration Matching: Get suggested users and projects based on your background and goals.",
+          "Project Details View: Learn more about each project and apply directly through the platform."
+      ],
+      gallery: [
+        "/projects/alliance/postits.png",
+        "/projects/alliance/persona1.png",
+        "/projects/alliance/persona2.png",
+        "/projects/alliance/mockups.png",
+        "/projects/alliance.png",
+        "/projects/alliance/discover.png",
+        "/projects/alliance/project.png",
+        "/projects/alliance/signup.png",
+      ],
+    },
+    "notion-for-pms": {
+      title: "UBCMA Membership Portal",
+      role: "Software Developer",
+      heroImage: "/design/ubcma/hero.png",
+      description: `UBCMA stands as UBC's only marketing focused club...`,
+      overview: `The fundamental goal of the membership portal is to serve as a platform for students to engage with us and manage their membership...`,
+      opportunity: `This inefficiency in our system was an opportunity for our dev team to streamline membership and event signups...`,
+      techStack: `The frontend was built with React and Next.js using ShadCN...`,
+      features: [
+        "Authentication system",
+        "Event + member portal integration",
+        "Admin dashboard + data tables",
+      ],
+      gallery: [
+        "/design/ubcma/1.png",
+        "/design/ubcma/2.png",
+        "/design/ubcma/3.png",
+        "/design/ubcma/4.png",
+      ],
+    },
+    "entreprenher": {
+      title: "UBCMA Membership Portal",
+      role: "Software Developer",
+      heroImage: "/design/ubcma/hero.png",
+      description: `UBCMA stands as UBC's only marketing focused club...`,
+      overview: `The fundamental goal of the membership portal is to serve as a platform for students to engage with us and manage their membership...`,
+      opportunity: `This inefficiency in our system was an opportunity for our dev team to streamline membership and event signups...`,
+      techStack: `The frontend was built with React and Next.js using ShadCN...`,
+      features: [
+        "Authentication system",
+        "Event + member portal integration",
+        "Admin dashboard + data tables",
+      ],
+      gallery: [
+        "/design/ubcma/1.png",
+        "/design/ubcma/2.png",
+        "/design/ubcma/3.png",
+        "/design/ubcma/4.png",
+      ],
+    },
+    "onlyprofs": {
+      title: "UBCMA Membership Portal",
+      role: "Software Developer",
+      heroImage: "/design/ubcma/hero.png",
+      description: `UBCMA stands as UBC's only marketing focused club...`,
+      overview: `The fundamental goal of the membership portal is to serve as a platform for students to engage with us and manage their membership...`,
+      opportunity: `This inefficiency in our system was an opportunity for our dev team to streamline membership and event signups...`,
+      techStack: `The frontend was built with React and Next.js using ShadCN...`,
+      features: [
+        "Authentication system",
+        "Event + member portal integration",
+        "Admin dashboard + data tables",
+      ],
+      gallery: [
+        "/design/ubcma/1.png",
+        "/design/ubcma/2.png",
+        "/design/ubcma/3.png",
+        "/design/ubcma/4.png",
+      ],
+    },
+    "react-lab": {
+      title: "UBCMA Membership Portal",
+      role: "Software Developer",
+      heroImage: "/design/ubcma/hero.png",
+      description: `UBCMA stands as UBC's only marketing focused club...`,
+      overview: `The fundamental goal of the membership portal is to serve as a platform for students to engage with us and manage their membership...`,
+      opportunity: `This inefficiency in our system was an opportunity for our dev team to streamline membership and event signups...`,
+      techStack: `The frontend was built with React and Next.js using ShadCN...`,
+      features: [
+        "Authentication system",
+        "Event + member portal integration",
+        "Admin dashboard + data tables",
+      ],
+      gallery: [
+        "/design/ubcma/1.png",
+        "/design/ubcma/2.png",
+        "/design/ubcma/3.png",
+        "/design/ubcma/4.png",
+      ],
+    },
+  };
   
  export const otherDesigns = [
     {
@@ -240,4 +349,3 @@ export const projects = [
        image: "/projects/newsletter.png",
     },
   ];
-  
