@@ -181,7 +181,7 @@ export const projects = [
         time: "January 2023",
         image: "/projects/onlyprofs.png",
         tech: ["UI Design", "HTML", "CSS"],
-        description: "A platform for professors to earn passive income by uploading lecture materials and resources for students to freely access, done for nwHacks.",
+        description: "A platform for professors to earn passive income by uploading lecture materials and resources for students, done for nwHacks.",
         slug: "onlyprofs",
     },
     {
