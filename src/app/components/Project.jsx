@@ -32,7 +32,7 @@ export default function DesignProjectPage({ params }) {
         />
         <div className="absolute bottom-8 left-8">
           <h1 className="text-4xl md:text-5xl font-bold">{project.title}</h1>
-          <p className="text-lg uppercase text-black">Role: {project.role}</p>
+          <p className="text-lg uppercase text-black mt-w">Role: {project.role}</p>
         </div>
       </div>
 
