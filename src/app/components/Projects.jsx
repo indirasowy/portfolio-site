@@ -99,16 +99,16 @@ function ProjectCard({ project, isInternal = false }) {
     const [activeTab, setActiveTab] = useState("projects");
   
     return (
-      <section id="projects" className="px-8 py-20 max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold mb-8 text-center">Projects</h2>
+      <section id="projects" className="px-8 py-12 md:py-20 max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 md:mb-8 text-center">Projects</h2>
   
         {/* Tab Toggle Buttons */}
-        <div className="flex justify-center gap-4 mb-10 flex-wrap">
+        <div className="flex justify-center gap-4 mb-6 md:mb-10 flex-wrap">
           {["projects", "design", "gallery"].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
+              className={`px-4 py-2 rounded-full text-sm font-semibold cursor-pointer transition ${
                 activeTab === tab
                   ? "bg-black text-white"
                   : "bg-gray-200 text-black"

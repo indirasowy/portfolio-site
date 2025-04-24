@@ -7,9 +7,9 @@ function ExperienceBlock({ data }) {
     return (
       <div className="space-y-12 border-l-2 border-gray-500 pl-6 mt-8">
         {data.map((exp, index) => (
-          <div key={index} className="relative pl-6">
+          <div key={index} className="relative pl-2 md:pl-6">
             <div className="absolute -left-[31px] top-2 w-3 h-3 bg-gray-500 rounded-full" />
-            <div className="flex items-center gap-4 mb-2">
+            <div className="flex items-center gap-2 md:gap-4 mb-2">
               <img
                 src={exp.logo}
                 alt={`${exp.company} logo`}
@@ -38,13 +38,13 @@ function ExperienceBlock({ data }) {
     const [activeTab, setActiveTab] = useState("experience");
   
     return (
-      <section id="experience" className="px-8 py-20 max-w-4xl mx-auto">
-        <h2 className="text-5xl font-bold mb-8 text-center">Experience</h2>
+      <section id="experience" className="px-8 py-12 md:py-20 max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 md:mb-8 text-center">Experience</h2>
   
         {/* Toggle Tabs */}
         <div className="flex justify-center gap-4 mb-4">
           <button
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
+            className={`px-4 py-2 rounded-full text-sm font-semibold cursor-pointer transition ${
               activeTab === "experience"
                 ? "bg-black text-white"
                 : "bg-gray-200 text-black"
@@ -54,7 +54,7 @@ function ExperienceBlock({ data }) {
             Work Experience
           </button>
           <button
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition ${
+            className={`px-4 py-2 rounded-full text-sm font-semibold cursor-pointer transition ${
               activeTab === "volunteering"
                 ? "bg-black text-white"
                 : "bg-gray-200 text-black"

@@ -53,6 +53,13 @@ export const experiences = [
   
   export const volunteering = [
     {
+      company: "UBC BizTech",
+      role: "Design Director",
+      logo: "/logos/biztech.svg",
+      date: "APRIL 2025 – Present",
+      points: ["Incoming designer for BizTech, UBC's largest business and technology club."],
+    },
+    {
       company: "nwPlus",
       role: "Logistics Coordinator",
       logo: "/logos/nwplus.png",

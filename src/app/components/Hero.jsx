@@ -19,11 +19,11 @@ const descriptions = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="flex flex-col md:flex-row items-center justify-center gap-28">
+    <section id="hero" className="flex flex-col md:flex-row items-center justify-center md:gap-28">
       <div className="text-center md:text-left">
-        <h2 className="text-8xl font-bold mb-4">Hi, I'm Indira</h2>
+        <h2 className="text-5xl md:text-8xl font-bold mb-4 mt-20 md:mt-0">Hi, I'm Indira</h2>
         <TypeAnimation
-          className="text-5xl text-pink-400 font-bold"
+          className="text-2xl md:text-5xl text-pink-400 font-bold"
           sequence={descriptions}
           wrapper="span"
           cursor={true}
