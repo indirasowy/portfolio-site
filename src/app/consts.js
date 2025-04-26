@@ -60,14 +60,14 @@ export const experiences = [
       points: ["Incoming designer for BizTech, UBC's largest business and technology club."],
     },
     {
-      company: "nwPlus",
+      company: "UBC nwPlus",
       role: "Logistics Coordinator",
       logo: "/logos/nwplus.png",
       date: "APRIL 2025 – Present",
       points: ["Incoming organizer for nwHacks, nwPlus' flagship hackathon and the biggest in Western Canada."],
     },
     {
-      company: "nwPlus",
+      company: "UBC nwPlus",
       role: "Developer",
       logo: "/logos/nwplus.png",
       date: "APRIL 2024 – APRIL 2025",

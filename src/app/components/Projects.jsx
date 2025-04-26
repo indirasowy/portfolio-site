@@ -25,7 +25,7 @@ function ProjectCard({ project, isInternal = false }) {
             />
           </div>
           <div>
-            <h3 className="font-semibold text-lg hover:underline">{project.title}</h3>
+            <h3 className="font-semibold text-xl hover:underline">{project.title}</h3>
             <p className="text-sm text-gray-500 mb-2">{project.time}</p>
             <div className="flex flex-wrap gap-2 mb-2">
               {project.tech.map((tech, i) => (
@@ -99,7 +99,7 @@ function ProjectCard({ project, isInternal = false }) {
     const [activeTab, setActiveTab] = useState("projects");
   
     return (
-      <section id="projects" className="px-8 py-12 md:py-20 max-w-6xl mx-auto">
+      <section id="projects" className="px-8 py-12 md:py-18 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 md:mb-8 text-center">Projects</h2>
   
         {/* Tab Toggle Buttons */}
@@ -108,10 +108,10 @@ function ProjectCard({ project, isInternal = false }) {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded-full text-sm font-semibold cursor-pointer transition ${
+              className={`px-4 py-2 rounded-full text-md font-semibold cursor-pointer transition ${
                 activeTab === tab
                   ? "bg-black text-white"
-                  : "bg-gray-200 text-black"
+                  : "bg-gray-200 hover:bg-gray-300 text-black"
               }`}
             >
               {tab === "projects"

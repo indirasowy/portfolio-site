@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="px-8 py-12 md:py-20 flex flex-col md:flex-row items-center gap-10 md:gap-16 max-w-6xl mx-auto">
+    <section id="about" className="px-8 py-12 md:py-18 flex flex-col md:flex-row items-center gap-10 md:gap-16 max-w-6xl mx-auto">
       <div className="w-[300px] h-[300px] md:w-[360px] md:h-[360px] relative rounded-[40px] overflow-hidden shadow-lg flex-shrink-0">
         <Image
           src="/me.png"
