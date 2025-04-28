@@ -101,8 +101,6 @@ function ProjectCard({ project, isInternal = false }) {
     return (
       <section id="projects" className="px-8 py-12 md:py-18 max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 md:mb-8 text-center">Projects</h2>
-  
-        {/* Tab Toggle Buttons */}
         <div className="flex justify-center gap-4 mb-6 md:mb-10 flex-wrap">
           {["projects", "design", "gallery"].map((tab) => (
             <button
@@ -122,12 +120,10 @@ function ProjectCard({ project, isInternal = false }) {
             </button>
           ))}
         </div>
-  
-        {/* Content */}
         {activeTab === "gallery" ? (
           <ImageGallery items={otherDesigns} />
         ) : (
-          <div className="grid gap-12 md:grid-cols-2">
+          <div className="grid gap-6 md:gap-12 md:grid-cols-2">
             {(activeTab === "projects" ? projects : designProjects).map(
               (project, index) => (
                 <ProjectCard

@@ -9,11 +9,11 @@ function ExperienceBlock({ data }) {
         {data.map((exp, index) => (
           <div key={index} className="relative md:pl-6">
             <div className="absolute -left-[31px] top-2 w-3 h-3 bg-gray-500 rounded-full" />
-            <div className="flex items-center gap-2 md:gap-4 mb-2">
+            <div className="flex items-center gap-3 md:gap-4 mb-2">
               <img
                 src={exp.logo}
                 alt={`${exp.company} logo`}
-                className="w-6 h-6 object-contain"
+                className="w-8 h-8 object-contain"
               />
               <h3 className="text-2xl md:text-3xl font-semibold">{exp.company}</h3>
             </div>

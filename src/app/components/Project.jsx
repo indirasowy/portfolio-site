@@ -10,7 +10,6 @@ export default function DesignProjectPage({ params }) {
 
   return (
     <div className="bg-white text-black">
-        {/* Back Button */}
         <div className="absolute top-6 left-6 z-50">
             <Link
             href="/#projects"
@@ -20,8 +19,6 @@ export default function DesignProjectPage({ params }) {
             Back to Home
             </Link>
         </div>
-
-      {/* Hero Image */}
       <div className="relative w-full h-[80vh] overflow-hidden">
         <Image
           src={project.heroImage}
@@ -35,8 +32,6 @@ export default function DesignProjectPage({ params }) {
           <p className="text-lg uppercase text-black mt-w">Role: {project.role}</p>
         </div>
       </div>
-
-      {/* Content */}
       <div className="max-w-5xl mx-auto py-20 px-6 space-y-16">
         <p className="text-lg text-black max-w-3xl">{project.description}</p>
 
@@ -65,8 +60,6 @@ export default function DesignProjectPage({ params }) {
             </ul>
           </div>
         </div>
-
-        {/* Gallery */}
         <div>
           <h2 className="text-xl font-semibold mb-6">Gallery</h2>
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">

@@ -8,7 +8,7 @@ export const experiences = [
       points: ["Incoming intern under the Central Social Impact - Social Impact Products Engineering team."],
     },
     {
-      company: "University of British Columbia",
+      company: "UBC",
       role: "Teaching Assistant",
       logo: "/logos/ubc.png",
       date: "JAN 2025 - Present │ Vancouver, BC",
@@ -36,7 +36,7 @@ export const experiences = [
         points: ["Assisted in developing automated lab systems and implementing a data infrastructure to securely manage sensitive image and audio files."],
     },
     {
-        company: "UBC Faculty of Applied Science",
+        company: "UBC Applied Science",
         role: "Student UX Designer",
         logo: "/logos/apsc.png",
         date: "MAY 2022 - AUGUST 2022 │ Vancouver, BC",
@@ -57,35 +57,35 @@ export const experiences = [
       role: "Design Director",
       logo: "/logos/biztech.svg",
       date: "APRIL 2025 – Present",
-      points: ["Incoming designer for BizTech, UBC's largest business and technology club."],
+      points: ["Designing graphics, media assets, and websites for BizTech, UBC's largest business and technology club with 600+ members."],
     },
     {
       company: "UBC nwPlus",
       role: "Logistics Coordinator",
       logo: "/logos/nwplus.png",
       date: "APRIL 2025 – Present",
-      points: ["Incoming organizer for nwHacks, nwPlus' flagship hackathon and the biggest in Western Canada."],
+      points: ["Organizing nwHacks, nwPlus' flagship hackathon with 700+ hackers and the biggest in Western Canada."],
     },
     {
       company: "UBC nwPlus",
       role: "Developer",
       logo: "/logos/nwplus.png",
       date: "APRIL 2024 – APRIL 2025",
-      points: ["Developed websites and tools to promote hackathons and streamline hacking experiences for organizers and participants."],
+      points: ["Developed websites and tools to promote hackathons and streamline hacking experiences for organizers and participants, supporting 3000+ students."],
     },
     {
       company: "UBC Marketing Association",
       role: "Vice President of Technology",
       logo: "/logos/ubcma.svg",
       date: "APRIL 2024 – APRIL 2025",
-      points: ["Led a team to build platforms like a marketing job board and a membership portal to manage events and member engagement."],
+      points: ["Led a team to build platforms like a marketing job board and a membership portal to manage events and engagement for 250+ club members."],
     },
     {
       company: "UBC Women in Computer Science",
       role: "Webmaster",
       logo: "/logos/wics.png",
       date: "MAY 2024 – JANUARY 2025",
-      points: [],
+      points: ["Designed, built, and managed websites promoting events and community for women in computer science."],
     },
     {
       company: "UBC LaunchPad",
@@ -145,7 +145,7 @@ export const projects = [
     },
     {
       title: "Communal Cars",
-      time: "August 2022",
+      time: "August 2022 │ Hack the 6ix Finalist 🏆",
       image: "/projects/communalcars.png",
       tech: ["React Native", "Redux", "Express.js"],
       description:
@@ -154,7 +154,7 @@ export const projects = [
     },
     {
       title: "Mapcessibility",
-      time: "January 2024",
+      time: "January 2024 │ nwHacks",
       image: "/projects/mapcessibility.png",
       tech: ["Next.js", "Firebase", "MappedIn"],
       description:
@@ -163,7 +163,7 @@ export const projects = [
     },
     {
       title: "Inspiritzia",
-      time: "January 2023",
+      time: "January 2023 │ girlCode",
       image: "/projects/inspiritzia.jpg",
       tech: ["React", "Python", "Flask", "SQLite"],
       description:
