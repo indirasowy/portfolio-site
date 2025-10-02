@@ -2,16 +2,16 @@
 export const experiences = [
     {
       company: "Meta",
-      role: "Incoming Software Engineer Intern",
+      role: "Software Engineer Intern",
       logo: "/logos/meta.png",
-      date: "MAY 2025 │ New York, NY",
-      points: ["Incoming intern under the Central Social Impact - Social Impact Products Engineering team."],
+      date: "MAY 2025 - AUG 2025 │ New York, NY",
+      points: ["As part of the Facebook Fundraising team, developed offsite fundraiser pages on Facebook mobile and web."],
     },
     {
       company: "UBC",
       role: "Teaching Assistant",
       logo: "/logos/ubc.png",
-      date: "JAN 2025 - Present │ Vancouver, BC",
+      date: "JAN 2025 - APR 2025 │ Vancouver, BC",
       points: ["Taught students how to build and program Arduino-based robots for COGS 300: Understanding and Designing Cognitive Systems."],
     },
     {
