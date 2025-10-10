@@ -368,6 +368,10 @@ export const projectPages = {
       image: "/projects/nextconnect.png",
     },
     {
+      title: "Hackathon Instagram Graphics",
+      image: "/projects/hellohacks.png",
+    },
+    {
       title: "Skincare Company Instagram Graphics",
       image: "/projects/mdhair.png",
     },
