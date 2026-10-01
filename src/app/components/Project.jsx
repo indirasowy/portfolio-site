@@ -1,79 +1,108 @@
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { projectPages } from "../consts";
 import { FaArrowLeft } from "react-icons/fa";
+import Navigation from "./Navigation";
+import Footer from "./Footer";
+import { Reveal } from "./ui";
 
-export default function DesignProjectPage({ params }) {
-  const project = projectPages[params.slug];
+function Block({ label, children }) {
+  return (
+    <Reveal className="grid md:grid-cols-[200px_1fr] gap-3 md:gap-12 py-10 border-t border-line">
+      <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-accent pt-1">
+        {label}
+      </h2>
+      <div className="text-lg text-body leading-relaxed">{children}</div>
+    </Reveal>
+  );
+}
 
-  if (!project) return <div>Project not found.</div>;
+export default function DesignProjectPage({ slug }) {
+  const project = projectPages[slug];
+
+  if (!project) notFound();
 
   return (
-    <div className="bg-white text-black">
-        <div className="absolute top-6 left-6 z-50">
-            <Link
+    <div className="min-h-screen flex flex-col">
+      <Navigation />
+      <main className="flex-grow px-6 md:px-8 max-w-6xl mx-auto w-full">
+        <div className="pt-8 md:pt-12">
+          <Link
             href="/#projects"
-            className="flex items-center gap-2 text-sm text-black hover:text-black transition"
-            >
-            <FaArrowLeft className="w-4 h-4" />
-            Back to Home
-            </Link>
-        </div>
-      <div className="relative w-full h-[80vh] overflow-hidden">
-        <Image
-          src={project.heroImage}
-          alt={project.title}
-          layout="fill"
-          objectFit="cover"
-          className="opacity-80"
-        />
-        <div className="absolute bottom-8 left-8">
-          <h1 className="text-4xl md:text-5xl font-bold">{project.title}</h1>
-          <p className="text-lg uppercase text-black mt-w">Role: {project.role}</p>
-        </div>
-      </div>
-      <div className="max-w-5xl mx-auto py-20 px-6 space-y-16">
-        <p className="text-lg text-black max-w-3xl">{project.description}</p>
-
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Problem</h2>
-            <p className="text-black">{project.problem}</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Process</h2>
-            <p className="text-black">{project.process}</p>
-          </div>
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-line bg-surface text-sm font-medium hover:border-foreground transition-colors"
+          >
+            <FaArrowLeft className="w-3 h-3" />
+            All projects
+          </Link>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Solution</h2>
-            <p className="text-black">{project.solution}</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Features</h2>
-            <ul className="list-disc list-inside text-black space-y-1">
-              {project.features.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
+        <Reveal className="mt-10 md:mt-14 max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-3">
+            UX Case Study
+          </p>
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">{project.title}</h1>
+          <p className="mt-5 text-xl text-muted">{project.description}</p>
+          <p className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent-soft text-accent-ink px-4 py-1.5 text-sm font-semibold">
+            Role: {project.role}
+          </p>
+        </Reveal>
+
+        <Reveal delay={0.1} className="relative mt-10 md:mt-14 w-full aspect-[16/9] rounded-[28px] overflow-hidden border border-line bg-surface">
+          <Image
+            src={project.heroImage}
+            alt={project.title}
+            fill
+            priority
+            sizes="(min-width: 1152px) 1152px, 100vw"
+            className="object-cover"
+          />
+        </Reveal>
+
+        <div className="mt-16 md:mt-20">
+          <Block label="Problem">
+            <p>{project.problem}</p>
+          </Block>
+          <Block label="Process">
+            <p>{project.process}</p>
+          </Block>
+          <Block label="Solution">
+            <p>{project.solution}</p>
+          </Block>
+          <Block label="Features">
+            <ul className="grid sm:grid-cols-2 gap-4">
+              {project.features.map((feature, i) => {
+                const [name, ...rest] = feature.split(": ");
+                return (
+                  <li key={i} className="rounded-2xl border border-line bg-surface p-5">
+                    <p className="font-semibold text-foreground">{name}</p>
+                    {rest.length > 0 && (
+                      <p className="mt-1 text-base text-muted">{rest.join(": ")}</p>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
-          </div>
+          </Block>
         </div>
-        <div>
-          <h2 className="text-xl font-semibold mb-6">Gallery</h2>
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+
+        <section className="py-10 border-t border-line mb-10">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-8">
+            Gallery
+          </h2>
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-5">
             {project.gallery.map((img, i) => (
-            <img
+              <img
                 key={i}
                 src={img}
                 alt={`${project.title} screenshot ${i + 1}`}
-                className="w-full mb-4 rounded-md shadow-md break-inside-avoid"
-            />
+                className="w-full mb-5 rounded-2xl border border-line break-inside-avoid"
+              />
             ))}
-        </div>
-        </div>
-      </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 }

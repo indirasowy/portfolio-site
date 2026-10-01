@@ -1,128 +1,189 @@
+export const socials = {
+  email: "indira.sowy@gmail.com",
+  linkedin: "https://www.linkedin.com/in/indirasowy/",
+  github: "https://github.com/indirasowy",
+};
+
+export const skills = {
+  Languages: ["Python", "Java", "JavaScript", "TypeScript", "C#", "C", "C++", "Ruby", "SQL", "HTML/CSS"],
+  Frameworks: ["React", "Next.js", "Ruby on Rails", "Redux", "Angular", "Express.js", "Flask", "Django", ".NET"],
+  Tools: ["Node.js", "GraphQL", "PostgreSQL", "MongoDB", "Firebase", "Figma", "Git"],
+};
 
 export const experiences = [
-    {
-      company: "Meta",
-      role: "Software Engineer Intern",
-      logo: "/logos/meta.png",
-      date: "MAY 2025 - AUG 2025 │ New York, NY",
-      points: ["As part of the Facebook Fundraising team, developed offsite fundraiser pages on Facebook mobile and web."],
-    },
-    {
-      company: "UBC",
-      role: "Teaching Assistant",
-      logo: "/logos/ubc.png",
-      date: "JAN 2025 - APR 2025 │ Vancouver, BC",
-      points: ["Taught students how to build and program Arduino-based robots for COGS 300: Understanding and Designing Cognitive Systems."],
-    },
-    {
-      company: "Salesforce",
-      role: "Software Engineer Intern",
-      logo: "/logos/salesforce.png",
-      date: "MAY - AUGUST 2024 │ San Francisco, CA",
-      points: ["Worked on one of the Salesforce Core Platform teams, building features to display sales forecast data for salespeople."],
-    },
-    {
-      company: "Copperleaf Technologies",
-      role: "Software Developer Intern",
-      logo: "/logos/copperleaf.png",
-      date: "MAY - DECEMBER 2023 │ Vancouver, BC",
-      points: ["Contributed to Copperleaf’s asset investment planning software, focusing on developing tools that help companies manage investment risks."],
-    },
-    {
-        company: "UBC CEDaR Space Lab",
-        role: "Student Operations Engineer",
-        logo: "/logos/cedar.png",
-        date: "OCTOBER 2022 - APRIL 2023 │ Vancouver, BC",
-        points: ["Assisted in developing automated lab systems and implementing a data infrastructure to securely manage sensitive image and audio files."],
-    },
-    {
-        company: "UBC Applied Science",
-        role: "Student UX Designer",
-        logo: "/logos/apsc.png",
-        date: "MAY 2022 - AUGUST 2022 │ Vancouver, BC",
-        points: ["Designed component-based systems for use across engineering faculty websites and built custom sites for internal clients."],
-    },
-    {
-      company: "Dashlabs.ai (YC W21)",
-      role: "Software Engineer Intern",
-      logo: "/logos/dashlabs.png",
-      date: "JUNE - AUGUST 2022 │ Vancouver, BC",
-      points: ["Developed features for a healthcare startup to manage client data and streamline test sign-ups between patients and labs."],
-    },
-  ];
-  
-  export const volunteering = [
-    {
-      company: "UBC BizTech",
-      role: "Design Director",
-      logo: "/logos/biztech.svg",
-      date: "APRIL 2025 – Present",
-      points: ["Designing graphics, media assets, and websites for BizTech, UBC's largest business and technology club with 600+ members."],
-    },
-    {
-      company: "UBC nwPlus",
-      role: "Logistics Coordinator",
-      logo: "/logos/nwplus.png",
-      date: "APRIL 2025 – Present",
-      points: ["Organizing nwHacks, nwPlus' flagship hackathon with 700+ hackers and the biggest in Western Canada."],
-    },
-    {
-      company: "UBC nwPlus",
-      role: "Developer",
-      logo: "/logos/nwplus.png",
-      date: "APRIL 2024 – APRIL 2025",
-      points: ["Developed websites and tools to promote hackathons and streamline hacking experiences for organizers and participants, supporting 3000+ students."],
-    },
-    {
-      company: "UBC Marketing Association",
-      role: "Vice President of Technology",
-      logo: "/logos/ubcma.svg",
-      date: "APRIL 2024 – APRIL 2025",
-      points: ["Led a team to build platforms like a marketing job board and a membership portal to manage events and engagement for 250+ club members."],
-    },
-    {
-      company: "UBC Women in Computer Science",
-      role: "Webmaster",
-      logo: "/logos/wics.png",
-      date: "MAY 2024 – JANUARY 2025",
-      points: ["Designed, built, and managed websites promoting events and community for women in computer science."],
-    },
-    {
-      company: "UBC LaunchPad",
-      role: "Designer and Developer",
-      logo: "/logos/launchpad.png",
-      date: "JANUARY 2023 – APRIL 2023",
-      points: [],
-    },
-    {
-      company: "UBC eProjects",
-      role: "Technology and Design Coordinator",
-      logo: "/logos/eprojects.png",
-      date: "MAY 2022 – APRIL 2023",
-      points: [],
-    },
-    {
-      company: "The Creative Solution",
-      role: "Software Developer",
-      logo: "/logos/tcs.jpeg",
-      date: "AUGUST 2022 – DECEMBER 2022",
-      points: [],
-    },
-    {
-      company: "Mosa",
-      role: "Website Designer",
-      logo: "/logos/mosa.jpeg",
-      date: "FEBRUARY 2022 – JUNE 2022",
-      points: [],
-    },
-    {
-      company: "NNECT",
-      role: "Graphic Designer",
-      logo: "/logos/nnect.jpeg",
-      date: "JANUARY 2022 – APRIL 2022",
-      points: [],
-    },
-  ];
+  {
+    company: "Wealthsimple",
+    role: "Software Engineer Intern",
+    logo: "/logos/wealthsimple.png",
+    date: "May 2026 – Present",
+    location: "Toronto, ON",
+    points: [
+      "Cut mobile release size overhead by 95% by replacing all-asset packaging with targeted asset bundling for 3.4M mobile users.",
+      "Took web end-to-end test failures from 62% to 0% by modernizing the TypeScript test suite and restoring critical CI quality gates.",
+      "Hardened security by restricting GraphQL schema introspection and enforcing cryptographic signature validation in shared Ruby APIs.",
+    ],
+    tech: ["TypeScript", "Ruby on Rails", "GraphQL"],
+  },
+  {
+    company: "Meta",
+    role: "Software Engineer Intern",
+    logo: "/logos/meta.png",
+    date: "May – Aug 2025",
+    location: "New York, NY",
+    points: [
+      "Built Facebook fundraiser pages supporting 100K+ fundraisers and $3M in donations, with modular components and optimized data fetching.",
+      "Scaled local fundraiser discovery to 1B users by extending backend data models to support location-based queries.",
+      "Boosted fundraiser visibility on IG Stories by 25% through cross-platform integrations, and led A/B experiments that improved performance by 18%.",
+    ],
+    tech: ["React", "Bloks", "GraphQL", "Obj-C", "C++"],
+  },
+  {
+    company: "UBC",
+    role: "Teaching Assistant",
+    logo: "/logos/ubc.png",
+    date: "Jan – Apr 2025",
+    location: "Vancouver, BC",
+    points: [
+      "Taught students how to build and program Arduino-based robots for COGS 300: Understanding and Designing Cognitive Systems.",
+    ],
+  },
+  {
+    company: "Salesforce",
+    role: "Software Engineer Intern",
+    logo: "/logos/salesforce.png",
+    date: "May – Aug 2024",
+    location: "San Francisco, CA",
+    points: [
+      "Cut sales forecasting chart data payloads by 50% by refactoring dynamic label rendering and consolidating weekly/monthly metrics.",
+      "Built a hierarchy toggle enabling dual forecasting views, cutting navigation time by 50%.",
+      "Integrated backend APIs to generate a live forecast line plot, improving forecast precision.",
+    ],
+    tech: ["Java", "JavaScript", "LWC"],
+  },
+  {
+    company: "Copperleaf Technologies",
+    role: "Software Developer Intern",
+    logo: "/logos/copperleaf.png",
+    date: "May – Dec 2023",
+    location: "Vancouver, BC",
+    points: [
+      "Built risk management CRUD features with SQL schemas for asset investment planning software.",
+      "Developed a server-side grid search and filter feature, cutting search times by 65%.",
+      "Improved page navigation and load times by 40% with reusable Angular components, backed by tests with 90% coverage.",
+    ],
+    tech: ["C#", ".NET", "SQL", "Angular"],
+  },
+  {
+    company: "UBC CEDaR Space Lab",
+    role: "Student Operations Engineer",
+    logo: "/logos/cedar.png",
+    date: "Oct 2022 – Apr 2023",
+    location: "Vancouver, BC",
+    points: [
+      "Assisted in developing automated lab systems and implementing a data infrastructure to securely manage sensitive image and audio files.",
+    ],
+  },
+  {
+    company: "Dashlabs.ai (YC W21)",
+    role: "Software Engineer Intern",
+    logo: "/logos/dashlabs.png",
+    date: "Jun – Aug 2022",
+    location: "Remote",
+    points: [
+      "Built and maintained a full-stack MERN app serving 3M+ patients, streamlining healthcare data entry by 60%.",
+      "Improved database performance by 35% by optimizing GraphQL API calls to MongoDB.",
+      "Automated form generation and PDF workflows, cutting manual input from 5 minutes to 1 minute per record.",
+    ],
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "GraphQL"],
+  },
+  {
+    company: "UBC Applied Science",
+    role: "Student UX Designer",
+    logo: "/logos/apsc.png",
+    date: "May – Aug 2022",
+    location: "Vancouver, BC",
+    points: [
+      "Designed component-based systems for use across engineering faculty websites and built custom sites for internal clients.",
+    ],
+  },
+];
+
+export const volunteering = [
+  {
+    company: "UBC BizTech",
+    role: "Design Director",
+    logo: "/logos/biztech.svg",
+    date: "Apr 2025 – Apr 2026",
+    points: ["Designed graphics, media assets, and websites for BizTech, UBC's largest business and technology club with 600+ members."],
+  },
+  {
+    company: "UBC nwPlus",
+    role: "Logistics Coordinator",
+    logo: "/logos/nwplus.png",
+    date: "Apr 2025 – Apr 2026",
+    points: ["Organized nwHacks, nwPlus' flagship hackathon and the biggest in Western Canada, with 700+ hackers."],
+  },
+  {
+    company: "UBC nwPlus",
+    role: "Software Developer",
+    logo: "/logos/nwplus.png",
+    date: "Apr 2024 – Apr 2025",
+    points: [
+      "Engineered a participant portal serving 1,500+ attendees across 3 events using React, Next.js, and Firebase.",
+      "Built a RAG-based AI chatbot with LangChain and the OpenAI API to answer participant FAQs.",
+      "Built a QR-based raffle system that updates Firestore on event check-in to automatically assign points.",
+    ],
+  },
+  {
+    company: "UBC Marketing Association",
+    role: "Vice President of Technology",
+    logo: "/logos/ubcma.svg",
+    date: "Apr 2024 – Apr 2025",
+    points: ["Led a team to build platforms like a marketing job board and a membership portal to manage events and engagement for 250+ club members."],
+  },
+  {
+    company: "UBC Women in Computer Science",
+    role: "Webmaster",
+    logo: "/logos/wics.png",
+    date: "May 2024 – Jan 2025",
+    points: ["Designed, built, and managed websites promoting events and community for women in computer science."],
+  },
+  {
+    company: "UBC LaunchPad",
+    role: "Designer and Developer",
+    logo: "/logos/launchpad.png",
+    date: "Jan – Apr 2023",
+    points: [],
+  },
+  {
+    company: "UBC eProjects",
+    role: "Technology and Design Coordinator",
+    logo: "/logos/eprojects.png",
+    date: "May 2022 – Apr 2023",
+    points: [],
+  },
+  {
+    company: "The Creative Solution",
+    role: "Software Developer",
+    logo: "/logos/tcs.jpeg",
+    date: "Aug – Dec 2022",
+    points: [],
+  },
+  {
+    company: "Mosa",
+    role: "Website Designer",
+    logo: "/logos/mosa.jpeg",
+    date: "Feb – Jun 2022",
+    points: [],
+  },
+  {
+    company: "NNECT",
+    role: "Graphic Designer",
+    logo: "/logos/nnect.jpeg",
+    date: "Jan – Apr 2022",
+    points: [],
+  },
+];
 
 export const projects = [
     {
@@ -145,7 +206,7 @@ export const projects = [
     },
     {
       title: "Communal Cars",
-      time: "August 2022 │ Hack the 6ix Finalist 🏆",
+      time: "August 2022 · Hack the 6ix Finalist",
       image: "/projects/communalcars.png",
       tech: ["React Native", "Redux", "Express.js"],
       description:
@@ -154,7 +215,7 @@ export const projects = [
     },
     {
       title: "Mapcessibility",
-      time: "January 2024 │ nwHacks",
+      time: "January 2024 · nwHacks",
       image: "/projects/mapcessibility.png",
       tech: ["Next.js", "Firebase", "MappedIn"],
       description:
@@ -163,11 +224,11 @@ export const projects = [
     },
     {
       title: "Inspiritzia",
-      time: "January 2023 │ girlCode",
+      time: "January 2023 · girlCode",
       image: "/projects/inspiritzia.jpg",
       tech: ["React", "Python", "Flask", "SQLite"],
       description:
-        "A fashion-based community platform for users to share outfits, made at girlCode",
+        "A fashion-based community platform for users to share outfits, made at girlCode.",
       link: "https://devpost.com/software/inspiritzia"
     },
   ];
@@ -186,7 +247,7 @@ export const projects = [
       time: "October - November 2022",
       image: "/projects/notion.png",
       tech: ["User Research", "UI Design"],
-      description: "A repurposed Notion the Product Management/agile market, made for UBC Product Managemnt Club's fellowship.",
+      description: "Notion repurposed for the product management and agile market, made for UBC Product Management Club's fellowship.",
       slug: "notion-for-pms",
     },
     {
@@ -194,7 +255,7 @@ export const projects = [
       time: "October - November 2022",
       image: "/projects/entreprenher.png",
       tech: ["UI Design", "HTML", "CSS"],
-      description: "A web application to find and support local female-owned businesses in your area, done for a hackathon, done for cmd-f.",
+      description: "A web application to find and support local female-owned businesses in your area, made at cmd-f.",
       slug: "entreprenher",
     },
     {
@@ -202,7 +263,7 @@ export const projects = [
         time: "January 2023",
         image: "/projects/onlyprofs.png",
         tech: ["UI Design", "React"],
-        description: "A platform for professors to earn passive income by uploading lecture materials and resources for students, done for nwHacks.",
+        description: "A platform for professors to earn passive income by uploading lecture materials and resources for students, made at nwHacks.",
         slug: "onlyprofs",
     },
     {

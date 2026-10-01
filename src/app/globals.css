@@ -1,24 +1,74 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-sans: var(--font-hanken-grotesk);
+  color-scheme: light;
+  --background: #fbf8f6;
+  --foreground: #18181b;
+  --surface: #ffffff;
+  --muted: #71717a;
+  --body: #52525b;
+  --line: #ece6e2;
+  --accent: #ec4899;
+  --accent-soft: #fde7f1;
+  --accent-ink: #be185d;
+  --contrast: #18181b;
+  --on-contrast: #ffffff;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #111013;
+  --foreground: #f4f4f5;
+  --surface: #1b1a1f;
+  --muted: #a1a1aa;
+  --body: #c4c4cc;
+  --line: #2c2a31;
+  --accent: #f472b6;
+  --accent-soft: #3b1a2c;
+  --accent-ink: #f9a8d4;
+  --contrast: #f4f4f5;
+  --on-contrast: #18181b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-body: var(--body);
+  --color-contrast: var(--contrast);
+  --color-on-contrast: var(--on-contrast);
+  --font-sans: var(--font-hanken-grotesk);
+  --font-serif: var(--font-instrument-serif);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-html {
-  font-family: "Hanken Grotesk";
+::selection {
+  background: var(--accent-soft);
+  color: var(--foreground);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 @keyframes slide-in {
@@ -26,6 +76,6 @@ html {
   to   { transform: translateX(0%);   }
 }
 
-.animate-slide-in { 
-  animation: slide-in 0.25s ease-out forwards; 
+.animate-slide-in {
+  animation: slide-in 0.25s ease-out forwards;
 }
